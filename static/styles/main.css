@@ -1,0 +1,76 @@
+* {
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+.first {
+  height: 100%;
+  margin-top: -5%;
+  overflow-x: hidden;
+}
+
+.datafuse-title {
+    text-align: center;
+}
+
+.home-tagline {
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.searchBar {
+}
+
+.main-buttons {
+    text-align: center;
+    padding-top: 2%;
+}
+
+.advanced-button {
+}
+.form-inputs {
+    
+}
+
+.form-test {
+}
+
+.cards {
+    box-shadow: 0px 0px 21px -2px gray;
+    margin: 4%;
+    padding: 2%;
+    border-radius: 13px;
+    background: #BFEFFF;
+}
+
+.cards:hover {
+    box-shadow: 10px 10px 5px gray;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+.testext {
+    color: black;
+}
+
+.info-heading {
+    text-align: center;
+}
+
+.card-url {
+}
+
+.drop-down-menu {
+    text-align: center;
+}
+
+.back-button{
+    position: fixed;
+    filter: invert(0%);
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+  }
+  
+.back-button:hover{
+transform: scale(1.2, 1.2);
+}
