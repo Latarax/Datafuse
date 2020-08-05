@@ -25,10 +25,12 @@ def home():
 def info():
     # grabbing the user query from the html form
     query = request.form['query']
-    time_filter = request.form.get('time_filter')
+    time_filter = request.form['time-filter'].lower()
+    num_results = int(request.form['result-amount'])
     print(f"Time Filter: {time_filter}")
-    website_urls = redditApiCalls(query)
-    cards2Display = webScraper(website_urls, query)
+    print(f"Result Amount: {num_results}")
+    website_urls = redditApiCalls(query, time_filter, num_results)
+    cards2Display = webScraper(website_urls, query, num_results)
 
     return render_template('info.html', cards2Display=cards2Display)
 

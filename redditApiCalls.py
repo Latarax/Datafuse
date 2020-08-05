@@ -9,14 +9,14 @@ reddit = praw.Reddit(client_id='htRyDsppzn0qLg',
 print(reddit.read_only)
 
 
-def redditApiCalls(query):
+def redditApiCalls(query, time_filter, num_results):
     result_counter = 0
     website_urls = []
 
     # iterating through results of search query
-    for submission in reddit.subreddit('all').search(query=query, time_filter='week', sort='top', limit=50):
+    for submission in reddit.subreddit('all').search(query=query, time_filter=time_filter, sort='top', limit=50):
         # break the loop if 3 valid submissions are found
-        if result_counter == 3:
+        if result_counter == num_results:
             break
         # skipping results that dont have an external url
         if submission.is_self:

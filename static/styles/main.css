@@ -84,3 +84,8 @@ body {
 .back-button:hover{
 transform: scale(1.2, 1.2);
 }
+
+.advanced-options-new {
+    background-color: white;
+}
+

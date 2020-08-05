@@ -15,13 +15,13 @@ class News_Card:
 
 
 
-def webScraper(website_urls, query):
+def webScraper(website_urls, query, num_results):
 
     # headers to bypass website not allowing scraping
     headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1)    AppleWebKit/537.36 (KHTML, like Gecko)' 'Chrome/41.0.2227.1 Safari/537.36'}
 
-    cards = [News_Card("","","") for i in range(3)]
-    cards2Display = [[] for i in range(3)]
+    cards = [News_Card("","","") for i in range(num_results)]
+    cards2Display = [[] for i in range(num_results)]
     card_count = 0
 
     # testing scraping on one of the results from reddit
