@@ -25,6 +25,8 @@ def home():
 def info():
     # grabbing the user query from the html form
     query = request.form['query']
+    time_filter = request.form.get('time_filter')
+    print(f"Time Filter: {time_filter}")
     website_urls = redditApiCalls(query)
     cards2Display = webScraper(website_urls, query)
 

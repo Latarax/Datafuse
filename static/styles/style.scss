@@ -1,0 +1,16 @@
+// Colors
+$bg-color: hsl(226, 90%, 35%);
+$dot-color: hsl(0, 0%, 100%);
+
+// Dimensions
+$dot-size: 1.5px;
+$dot-space: 50px;
+
+body {
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+}
+
