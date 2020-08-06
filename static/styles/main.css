@@ -16,14 +16,14 @@ body {
 
 .datafuse-title {
     text-align: center;
-    color: rgb(250, 250, 117);
-    text-shadow: 5px 3px rgb(95, 95, 90);
+    color: rgb(255, 255, 66);
+    text-shadow: 7px 5px 4px rgb(121, 121, 113);
 }
 
 .home-tagline {
     padding-bottom: 3%;
     text-align: center;
-    color: rgb(250, 250, 117);
+    color: rgb(255, 255, 66);
 }
 
 .searchBar {

@@ -17,7 +17,7 @@
             <div class="container form-inputs">
                 <form class="row form-test" action="{{ url_for('info') }}"   method="POST" id="query_form">
                     <div class="col-md-3"></div>
-                    <input class="col-md-6 form-control searchBar" type="text"  name="query" autocomplete="off" placeholder="What do you want to learn about?">
+                    <input class="col-md-6 form-control searchBar" type="text"  name="query" autocomplete="off" placeholder="What do you want to learn about?" required>
                     <div class="col-md-3"></div>
                     <div class="col-md-12 main-buttons">
                         <input class="btn btn-primary" type="submit" value="Search">
